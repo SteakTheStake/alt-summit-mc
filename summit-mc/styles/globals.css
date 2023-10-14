@@ -22,7 +22,9 @@ body {
 }
 
 main {
-  padding: 0 20% 0 20%;
+  max-width: 1150px;
+  padding-inline: 1rem;
+  margin-inline: auto;
 }
 
 img,
@@ -65,7 +67,6 @@ a {
   background: #7d7d7d url("/img/bgbtn.png") center repeat;
   background-size: 100% 200%;
   color: #e0e0e0;
-  font-size: 1.2vw;
   outline: 0.1vw solid #000;
   outline-offset: -0.1vw;
   text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
@@ -183,6 +184,8 @@ button {
 
 .bottom-div {
   margin: 75px 0 0;
+  margin-inline: auto;
+  max-width: 1150px;
   padding: 25px;
   align-items: flex-end;
   font-size: 1.2vw;

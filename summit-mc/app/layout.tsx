@@ -3,6 +3,8 @@ import "@/styles/stars.css";
 
 import type { Metadata } from "next";
 import Providers from "./providers";
+import { Footer } from "@/components/footer";
+import { Stars } from "@/components/stars";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://summitmc.xyz"),
@@ -28,7 +30,9 @@ export default function RootLayout({
       <body>
         <Providers>
           <main>{children}</main>
+          <Footer />
         </Providers>
+        <Stars />
       </body>
     </html>
   );
