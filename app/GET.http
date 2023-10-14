@@ -1,0 +1,2 @@
+GET https://www.patreon.com/oauth2/authorize?response_type=code&client_id=yOXZgIoKBJudCRln5wj6CTz_HmqNCwe3Th3O_8G8XR0fSsQg5fsQox496NWERjZr&redirect_uri=https://summitmc.xyz/pages/vault.html
+Accept: application/json
