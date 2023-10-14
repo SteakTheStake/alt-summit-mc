@@ -62,7 +62,6 @@ a {
 
 .button {
   padding: 10px 10px 15px;
-  margin: 0 auto 2% auto;
   background: #7d7d7d url("/img/bgbtn.png") center repeat;
   background-size: 100% 200%;
   color: #e0e0e0;
@@ -180,4 +179,14 @@ button {
   width: 100vw;
   background: radial-gradient(ellipse at bottom, #002525 0%, #0a1010 100%);
   overflow: hidden;
+}
+
+.bottom-div {
+  margin: 75px 0 0;
+  padding: 25px;
+  align-items: flex-end;
+  font-size: 1.2vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
 }

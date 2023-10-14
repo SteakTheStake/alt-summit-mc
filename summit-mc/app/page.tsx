@@ -30,27 +30,12 @@ export default function Home() {
           <LinkButton href="/free" className="col-span-2">
             Free Area
           </LinkButton>
-          <LinkButton href="/" className="col-span-2">
+          <LinkButton href="/vault" className="col-span-2">
             Download Vault
           </LinkButton>
+          <LinkButton href="/login">Connect With Patreon</LinkButton>
+          <Button>Quit</Button>
         </div>
-        <button className="button singleplayer soundButton" id="click1">
-          Free Area
-        </button>
-        <br />
-        <button className="button multiplayer soundButton" id="click2">
-          Download Vault
-        </button>
-        <br />
-        <button
-          className="button button_small left soundButton patreonAuthBtnclassName"
-          id="click7"
-        >
-          Connect With Patreon
-        </button>
-        <button className="button button_small right soundButton" id="click4">
-          Quit
-        </button>
       </section>
       <section className="image2">
         <h3>COMING SOON</h3>
