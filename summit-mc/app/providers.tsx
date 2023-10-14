@@ -13,12 +13,12 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
 
     const buttons = document.querySelectorAll(".sound-button");
 
-    if (buttons && buttons.length > 0) {
+    if (buttons) {
       buttons.forEach((button) => button.addEventListener("click", playSound));
     }
 
     return () => {
-      if (buttons && buttons.length > 0) {
+      if (buttons) {
         buttons.forEach((button) =>
           button.removeEventListener("click", playSound),
         );
