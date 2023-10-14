@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 import type { Metadata } from "next";
+import { Button, LinkButton } from "@/components/button";
 
 export const metadata: Metadata = {
   title: "SummitMC | Home",
@@ -25,7 +26,14 @@ export default function Home() {
           style={{ visibility: "hidden" }}
           src="/img/space-half.png"
         />
-        <div className="grid grid-cols-2 gap-4"></div>
+        <div className="grid grid-cols-2 gap-4">
+          <LinkButton href="/free" className="col-span-2">
+            Free Area
+          </LinkButton>
+          <LinkButton href="/" className="col-span-2">
+            Download Vault
+          </LinkButton>
+        </div>
         <button className="button singleplayer soundButton" id="click1">
           Free Area
         </button>

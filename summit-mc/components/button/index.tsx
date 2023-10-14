@@ -14,7 +14,10 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <button {...props} className={twMerge("button soundButton", className)}>
+    <button
+      {...props}
+      className={twMerge("button w-full sound-button", className)}
+    >
       {children}
     </button>
   );
@@ -36,7 +39,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
     <Link
       {...props}
       href={href}
-      className={twMerge("button soundButton", className)}
+      className={twMerge("button w-full sound-button", className)}
     >
       {children}
     </Link>
