@@ -3,13 +3,10 @@ import PatreonProvider from "next-auth/providers/patreon";
 
 export const authOptions = {
   secret: process.env.AUTH_SECRET,
-  pages: {
-    signIn: "/login",
-  },
   providers: [
     PatreonProvider({
-      clientId: process.env.PATREON_ID,
-      clientSecret: process.env.PATREON_SECRET,
+      clientId: process.env.PATREON_CLIENT_ID,
+      clientSecret: process.env.PATREON_CLIENT_SECRET,
       authorization: {
         params: {
           scope: "identity.memberships identity[email] identity",
