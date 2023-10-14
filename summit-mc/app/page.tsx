@@ -11,12 +11,13 @@ export default function Home() {
   return (
     <>
       <section>
-        <img
-          alt="Minecraft Text"
-          id="logo"
-          className="small_logo"
-          src="/img/Summit.png"
-        />
+        <div className="flex justify-center">
+          <img
+            alt="Minecraft Text"
+            className="w-1/2 my-10"
+            src="/img/Summit.png"
+          />
+        </div>
         <div id="flashingtext">Minecraft At Its Peak</div>
         <img
           alt="Minecraft"
