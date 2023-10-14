@@ -25,6 +25,7 @@ export default function Home() {
           style={{ visibility: "hidden" }}
           src="/img/space-half.png"
         />
+        <div className="grid grid-cols-2 gap-4"></div>
         <button className="button singleplayer soundButton" id="click1">
           Free Area
         </button>
