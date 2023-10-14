@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import "@/styles/stars.css";
 
 import type { Metadata } from "next";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://summitmc.xyz"),
@@ -25,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <Providers>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );
