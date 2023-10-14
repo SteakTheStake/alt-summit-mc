@@ -1,4 +1,5 @@
-import "./globals.css";
+import "@/styles/globals.css";
+import "@/styles/stars.css";
 
 import type { Metadata } from "next";
 
@@ -23,7 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
