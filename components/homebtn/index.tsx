@@ -3,9 +3,7 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
-import { signIn, useSession } from "next-auth/react";
-import { useEffect } from 'react';
-
+import { useSession } from "next-auth/react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode;
@@ -57,23 +55,24 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
   );
 };
 
-export const PatreonButton = ({ className }: { className?: string }) => {
+export const HomeBtn = ({ className }: { className?: string }) => {
   const { data: session } = useSession();
+  if (session) {
+    redirect("/");
+  }
 
-  // Perform the redirect in a useEffect hook
-  useEffect(() => {
-    if (session) {
-      redirect("/vault");
-    }
-  }, [session]); // Dependency array: the effect will run when 'session' changes
+  const handleOnClick = () => {
+    redirect("/");
+  };
 
   return (
       <Button
-          onClick={async () => await signIn("patreon")}
-          aria-label="Continue with Patreon"
+          onClick={handleOnClick}
+          aria-label="Back To Home Page"
           className={className}
       >
         Continue With Patreon
       </Button>
   );
 };
+

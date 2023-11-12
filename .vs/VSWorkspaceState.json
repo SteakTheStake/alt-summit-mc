@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\free",
+    "\\app\\vault",
+    "\\components",
+    "\\components\\button",
+    "\\components\\homebtn"
+  ],
+  "SelectedNode": "\\components\\button\\index.tsx",
+  "PreviewInSolutionExplorer": false
+}
